@@ -7,6 +7,8 @@ require 'nokogiri'
 require 'json'
 
 require_relative 'utils/file_manager'
+require_relative 'utils/day_generator.rb'
+require_relative 'utils/test_generator.rb'
 
 require 'pry-byebug'
 
@@ -18,14 +20,11 @@ class Setup
   class << self
     def run
       year, day = validate_args
-      setup_day(year, day)
+      DayGenerator.new(year, day)
+      TestGenerator.new(year, day)
     end
 
     private
-
-    def setup_day(year, day)
-
-    end
 
     def validate_args
       raise "Invalid input. Pass a year and a day number. Ex: `./setup 2022 1`" if ARGV.count != 2
