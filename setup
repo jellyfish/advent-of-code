@@ -22,6 +22,7 @@ class Setup
       year, day = validate_args
       DayGenerator.new(year, day)
       TestGenerator.new(year, day)
+      FileManager.write_file(year, day, "input", body: AdventOfCode.get_input(year, day))
     end
 
     private
