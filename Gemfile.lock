@@ -1,0 +1,38 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ansi (1.5.0)
+    builder (3.2.4)
+    byebug (11.1.3)
+    cli-ui (2.1.0)
+    coderay (1.1.3)
+    method_source (1.0.0)
+    minitest (5.16.3)
+    minitest-reporters (1.5.0)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
+    nokogiri (1.13.9-x86_64-darwin)
+      racc (~> 1.4)
+    pry (0.14.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-byebug (3.10.1)
+      byebug (~> 11.0)
+      pry (>= 0.13, < 0.15)
+    racc (1.6.1)
+    ruby-progressbar (1.11.0)
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  cli-ui
+  minitest-reporters
+  nokogiri
+  pry
+  pry-byebug
+
+BUNDLED WITH
+   2.3.3
