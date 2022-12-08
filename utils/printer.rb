@@ -10,7 +10,7 @@ class Printer
         CLI::UI::SpinGroup.new do |sg|
           sg.add('running...') do |spinner|
             evaluated = yield
-            spinner.update_title(evaluated)
+            spinner.update_title(evaluated.to_s)
           end
         end
       end
