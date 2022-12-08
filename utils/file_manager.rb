@@ -16,7 +16,15 @@ class FileManager
       @root_directory ||= File.expand_path(Dir.pwd)
     end
 
+    def input_file(year, day)
+      return unless file_exist?(year, day, INPUT_FILE_NAME)
+
+      File.new(File.join(root_directory, year.to_s, day.to_s, INPUT_FILE_NAME))
+    end
+
     private
+
+    INPUT_FILE_NAME = "input"
 
     def year_day_dir_exist?(year, day)
       File.exist?(File.join(root_directory, year.to_s, day.to_s))
