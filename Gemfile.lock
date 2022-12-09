@@ -13,6 +13,8 @@ GEM
       builder
       minitest (>= 5.0)
       ruby-progressbar
+    mocha (2.0.2)
+      ruby2_keywords (>= 0.0.5)
     nokogiri (1.13.9-x86_64-darwin)
       racc (~> 1.4)
     pry (0.14.1)
@@ -23,6 +25,7 @@ GEM
       pry (>= 0.13, < 0.15)
     racc (1.6.1)
     ruby-progressbar (1.11.0)
+    ruby2_keywords (0.0.5)
 
 PLATFORMS
   x86_64-darwin-20
@@ -30,6 +33,7 @@ PLATFORMS
 DEPENDENCIES
   cli-ui
   minitest-reporters
+  mocha
   nokogiri
   pry
   pry-byebug

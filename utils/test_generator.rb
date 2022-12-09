@@ -19,6 +19,7 @@ class TestGenerator
       require "minitest"
       require "minitest/autorun"
       require "minitest/reporters"
+      require 'mocha/minitest'
 
       require_relative "day#{@day}"
 
